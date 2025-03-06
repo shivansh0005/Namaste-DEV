@@ -23,3 +23,21 @@ and we import them like->const {name}=require("path");
 
 -we no longer need require func we can export like  export f_name and import like const {f_name} from "path"
 
+
+# Episode 5->Diving into The Nodejs github repo
+--Learnt about how the code in a module is wrapped inside IIFE before using require and module.exports  provided by node js .
+
+--Learnt bts working of require("./path")
+
+    1)Resolving the module
+    --checks the type of file wether it is a data.json ,node module or locak file
+
+    2)Loading a module
+    -File content is being loaded acc to file type
+  3)wrape inside iife
+   4)module.exports
+
+5)Caching->It is possible that same module is required by multiple files therefore it is executed just once and then cached for future purpose 
+
+ 
+
