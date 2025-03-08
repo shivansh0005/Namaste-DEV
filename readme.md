@@ -39,5 +39,15 @@ and we import them like->const {name}=require("path");
 
 5)Caching->It is possible that same module is required by multiple files therefore it is executed just once and then cached for future purpose 
 
+# libuv and async Io
+
+-->Js is sync and single threaded language in nature.
+
+-->When it comes to sync tasks V8 engine embedded din nodejs is enough to manage them.
+
+-->When it comes to async tasks Nodejs uses Libuv a lib written in C language to manage them.
+
+-->This makes it easy for nodejs to perform in non blocking manner.
+
  
 
