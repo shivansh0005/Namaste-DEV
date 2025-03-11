@@ -49,5 +49,12 @@ and we import them like->const {name}=require("path");
 
 -->This makes it easy for nodejs to perform in non blocking manner.
 
- 
+
+# sync,async,setTimeout Zero
+
+->Coded a combination of sync and async task and learnt how sync modules block the main thread of js module and stops execution of functios and module ahead.
+
+->Learnt mechanism of node js on how it executed sync tasksvery fast and all async task are given to libuv for executing.
+
+->even if settimeout is executed with 0 seconds  timer it will be executed after the callstack s empty from sync tasks 
 
