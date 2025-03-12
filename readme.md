@@ -58,3 +58,16 @@ and we import them like->const {name}=require("path");
 
 ->even if settimeout is executed with 0 seconds  timer it will be executed after the callstack s empty from sync tasks 
 
+
+# Deep dive into v8 js engine
+
+->when the code is given to v8 engine it passes to few stages before executing->
+
+A)Parsing->The code is converted to tokens which is then converted into an AST
+
+B)Now the ast is passed through and ignition interpretor which converts the code to byte code which is then executed.
+
+C)There are few code which are executed again and again,which is passed to Turbofan compiler which inturn make in more optimized machine code and it is executed after that.
+
+d)Garbage collection also takes place parallely
+
