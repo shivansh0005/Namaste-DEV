@@ -71,3 +71,15 @@ C)There are few code which are executed again and again,which is passed to Turbo
 
 d)Garbage collection also takes place parallely
 
+
+# libuv & Event Loop
+
+->Learnt About internal working of Libuv.
+->It has 4 phases  timer,poll check and clock.
+->all settimeout and set internal are executed in priority basis.
+->then all callback func and executed 
+->folllowed by setimmediate  which is gthen followed by close phase
+
+->before every phase process.nexttick() and promise callback are executed  
+
+->if the event loop is empty it rests on poll phase.
