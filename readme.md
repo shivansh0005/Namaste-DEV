@@ -73,6 +73,7 @@ d)Garbage collection also takes place parallely
 
 
 # libuv & Event Loop
+//Also read Nodejs official event loop blog
 
 ->Learnt About internal working of Libuv.
 ->It has 4 phases  timer,poll check and clock.
@@ -83,3 +84,11 @@ d)Garbage collection also takes place parallely
 ->before every phase process.nexttick() and promise callback are executed  
 
 ->if the event loop is empty it rests on poll phase.
+
+# Thread pool in Libuv
+
+->In libuv threadpoll size by default is 4
+->Learnt wether nodejs is single threaded or multi threaded->depends wether syc or asyn task is being performer
+->learnt about epoll and how it informs eventloop of any notification 
+
+
