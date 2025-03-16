@@ -91,8 +91,16 @@ d)Garbage collection also takes place parallely
 ->Learnt wether nodejs is single threaded or multi threaded->depends wether syc or asyn task is being performer
 ->learnt about epoll and how it informs eventloop of any notification 
 
-# Creating a server
+# Creating a server & Database -SQL & NOSQL
 
-->Code is self sufficient 
+->Learnt about servers
+->Learnt about client -server architecture and how data is being send in the form of packets
+
+->Learnt how ports are being used to listen to upcoming request in the case of servers.
+
+->Learnt about sql and no sql databases
+->collection and document in nosql
+
+# Creating a database and mongodb
 
 
